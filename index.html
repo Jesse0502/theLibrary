@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="main">
+        <div id="header">
+            <h1>The Library</h1>
+        </div>
+        <div id="bookshelf">
+            <h3 id="bookshelf-header"><u>Bookshelf</u></h3>
+            <div id="list">
+                <h3 class="total-books">Total Books: 0</h3>
+               
+                <button id="add-book">Add a book</button>
+                <div class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <form action="submit">
+                            <h2>Book Details</h2>
+                            <div class="book-details">
+                                <label>Book Name:</label><br>
+                                <input book-name class="input-details" type="text"><br><br>
+
+                                <label>Author Name: </label><br>
+                                <input author-name class="input-details" type="text"><br><br>
+
+                                <label>Total Pages:</label><br>
+                                <input total-pages class="input-details" type="text"><br><br>
+
+                                <label>Pages read:</label><br>
+                                <input pages-read class="input-details" type="text">
+
+                                <br><br>
+                                <input class="submit-details" value="Submit" type="button">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="books">
+                <div class="book">
+                    <div class="book-title">
+                        <h1>Harry Potter & The Deathly Hallows</h1>
+                        <h3 class="book-author">J.K Rowling</h3>
+                    </div>
+                    <div class="book-content">
+                        <div class="book-body">
+                            <h2>Total pages: 213</h2>
+                            <h2>Pages read: 113</h2>
+                            <h2>Pages left: 100</h2> 
+                            <button class="book-edit">Edit</button>
+                            <button class="book-del">Delete</button>
+                        </div>
+                        <div class="book-cover"> 
+                            <img class="book-cover-photo" src="./assets/harry.jpg" alt="book-cover"/>
+                            
+                        </div>
+                    </div>  
+                </div>
+                
+            </div>
+        </div>
+    </div>    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+body{ 
+    margin: 0;
+    padding: 0; 
+    background-color: blanchedalmond;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#header{
+    background-image: url("./assets/library-bg.jpg"); 
+    color: #ffe7d1;
+    text-shadow: 2px 2px #032323;
+    text-align: center;
+    font-size: 2em;
+    padding: 10px 0 10px 0;
+}
+
+#bookshelf-header{ 
+    text-align: center;
+    font-size: 2em;
+    color: #c46d34;
+    margin: 10px 0 0 0;
+    
+}
+
+#bookshelf{
+    margin: auto;
+    width: 75%;
+}
+
+
+#list{
+    text-align: center;
+    margin-bottom: 5vh;
+    
+}
+
+#books{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* display: inline-flex; */
+    width: 100%;
+    gap: 5vh; 
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+.modal-content{ 
+        background-color: #daba9c;
+        background-size: 100%;
+        color: rgb(29, 29, 29);
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 50%; 
+}
+  
+  /* The Close Button */
+.close {
+    color: #333333;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.book-details{
+    font-size: 1.3rem;
+    text-align: left;  
+}
+
+.input-details{
+    padding: 1vh;
+    width: 95%;
+}
+
+/* .book-cover-name{
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(247, 187, 148);
+    font-size: 1rem;
+    margin: auto;
+    width: 30%;
+    word-break: keep-all;
+    margin: -30vh 0 0 17.5vh;
+    text-align: center;
+    transform-style: preserve-3d;
+    transform: rotateZ(-7deg);
+    transform: matrix3d(-10deg);
+
+} */
+
+.checkRead{
+    position: relative;
+    margin-top: 5vh; 
+}
+
+.submit-details{
+    padding: 1vh 2vh 1vh 2vh;
+    background-color: #fff0e1;
+}
+
+.book{
+    border: 2px solid black;  
+    height:  min-content; 
+    margin-bottom: 5vh;
+}
+
+.book-title{
+    margin: 0;
+    padding: 20px 10px 20px 10px;
+    color:rgb(247, 187, 148);
+    background-image: linear-gradient(rgb(163, 66, 1), rgb(170, 50, 50));
+    height: max-content;
+    word-break: break-all;
+    text-decoration: 2px underline;
+}
+
+.book-body{
+    padding: 15px;
+    background-color: #A93231;
+    color: rgb(255, 223, 213);  
+}
+
+.book-author{
+    text-align: right;
+    margin-bottom: -10px; 
+}
+
+
+.book-del{
+    /* float: right; */
+    height: 5vh;
+    width: 10vh;
+    color: white;
+    background-color: red;
+    border: 1px solid black;
+    cursor: pointer; 
+}
+
+.book-del:active ,.book-edit:active{
+    transform: scale(0.92);
+    border: none;
+
+}
+
+.book-edit{
+    /* float: right; */
+    height: 5vh;
+    width: 10vh;
+    color: white;
+    background-color: green;
+    border: 1px solid black;
+    cursor: pointer;
+    margin-right: 10px;
+}
+ 
+
+.book-content{
+    display: flex;
+}
+
+.book-cover-photo{
+    padding: 2vh; 
+    width: 35vh;
+    height: 38vh;
+    overflow: hidden;
+    margin: 3vh;
+    text-align: center;
+    position: relative;  
+    /* margin-top: -3vh; */
+    transform: scale3d(20deg);
+}
+  
+#add-book{
+    padding: 1vh 2vh 1vh 2vh;
+    background-color: #C28142;
+    border: 1px solid #7e532b;
+    color: #ffefe1;
+}
+
+#add-book:active{
+    transform: scale(0.9);
+}
+
+#add-btn{
+    background-color: rgb(204, 19, 19);
+    color: white;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+}
+@media all and (max-width: 600px){
+    #bookshelf{
+        margin: auto;
+        width: 80%;
+    }
+
+    #books{
+        grid-template-columns: 1fr;
+    }
+}
